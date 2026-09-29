@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panel de administración | Transportes Ruta Norte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <a class="logo" href="admin.html">Ruta<b>Norte</b></a>
+    <a href="#resumen">Resumen</a>
+    <a href="#vehiculos">Vehículos</a>
+    <a href="#reservas">Reservas</a>
+    <a class="out" href="login.html">Cerrar sesión</a>
+  </aside>
+
+  <main class="main">
+    <div class="top" id="resumen">
+      <h1>Panel de administración</h1>
+      <span>Sede principal: Medellín</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><small>Vehículos en alquiler</small><strong>18</strong></div>
+      <div class="stat"><small>Viajes de carga hoy</small><strong>7</strong></div>
+      <div class="stat"><small>Viajes de pasajeros hoy</small><strong>4</strong></div>
+      <div class="stat"><small>Solicitudes nuevas</small><strong>5</strong></div>
+    </div>
+
+    <section class="tabla" id="vehiculos">
+      <h2>Vehículos</h2>
+      <table>
+        <thead><tr><th>Placa</th><th>Tipo</th><th>Servicio</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td>ABC 123</td><td>Camión liviano</td><td>Carga</td><td><span class="tag ok">En ruta</span></td></tr>
+          <tr><td>DEF 456</td><td>Tractocamión</td><td>Carga</td><td><span class="tag ok">En ruta</span></td></tr>
+          <tr><td>GHI 789</td><td>Vehículo de pasajeros</td><td>Pasajeros</td><td><span class="tag wait">Disponible</span></td></tr>
+          <tr><td>JKL 012</td><td>Camión liviano</td><td>Alquiler</td><td><span class="tag">En alquiler</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="tabla" id="reservas">
+      <h2>Reservas recientes</h2>
+      <table>
+        <thead><tr><th>Cliente</th><th>Servicio</th><th>Fecha</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td>Cliente ejemplo 1</td><td>Carga a Bogotá</td><td>02/10/2026</td><td><span class="tag ok">Confirmada</span></td></tr>
+          <tr><td>Cliente ejemplo 2</td><td>Traslado de personal</td><td>03/10/2026</td><td><span class="tag wait">Pendiente</span></td></tr>
+          <tr><td>Cliente ejemplo 3</td><td>Alquiler de camión</td><td>05/10/2026</td><td><span class="tag ok">Confirmada</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</div>
+</body>
+</html>

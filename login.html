@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iniciar sesión | Transportes Ruta Norte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="auth">
+  <div class="login-card">
+    <a class="logo" href="index.html">Ruta<b>Norte</b></a>
+    <h1>Iniciar sesión</h1>
+    <p>Ingresa para ver el panel de administración.</p>
+    <form action="admin.html" method="get">
+      <label for="correo">Correo</label>
+      <input id="correo" name="correo" type="email" autocomplete="username" required>
+      <label for="clave">Contraseña</label>
+      <input id="clave" name="clave" type="password" autocomplete="current-password" required>
+      <button class="btn main" type="submit">Entrar</button>
+    </form>
+    <a class="back" href="index.html">Volver al sitio</a>
+  </div>
+</main>
+</body>
+</html>
